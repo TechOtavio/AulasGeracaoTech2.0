@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        .titulo {
+            background-color: #B71B1C;
+        }
+        nav {
+            background-color: #FECCBD;
+        }
+        .paragrafo {
+            padding: 15px 0;
+            font-size: 22px;
+        }
+        .cards{
+            background-color: white;
+            width: 300px;
+            height: 300px;
+        }
+        .paraCards{
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="titulo text-center text-white p-5">
+            <h1>Restaurante Sabor Brasil</h1>
+            <p class="pragrafo p-1">O verdadeiro sabor da nossa terra</p>
+        </div>
+        <nav class="navbar navbar-expand-xxl  accordion">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+                  <a class="nav-link fw-bold" href="#">Pratos</a>
+                  <a class="nav-link fw-bold" href="#">Bebidas</a>
+                  <a class="nav-link fw-bold" href="#">Cadastro</a>
+                  <a class="nav-link fw-bold" href="#">Login</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="my-5">
+        <div class="my-5 text-center">
+            <h2>Bem-vindo ao melhor sabor da comida brasileira!</h2>
+            <p class="paragrafo">Explore nossos pratos típicos e bebidas deliciosas. Faça seu cadastro e aproveite ofertas exlusivas.</p>
+        </div>
+        <div class="container">
+            <div style="background-color: #FFF2DF;" class="row rounded-4 py-4 px-2 align-items-center">
+                <div class="col-8">
+                    <h2>Sobre Nós</h2>
+                    <p class="paragrafo">O Restaurante Sabor Brasil nasceu da paixão pela culinária brasileira. Valorizamos ingredientes frescos e
+                    receitas autênticas que representam todas as regiões do Brasil.</p>
+                </div>
+                <div class="col-4">
+                    <img class="img-fluid rounded-4 shadow" src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg" alt="Imagem de comida brasileira">
+                </div>
+            </div>
+            <div style="background-color: #FFE0B4;" class="row rounded-4 py-5 px-2 justify-content-center">
+                <h2 style="padding-top: 10px; padding-bottom: 20px; ">Destaque do Cardápio</h2>
+                <div class="cards col-3 rounded-4 mx-5 text-center align-items-center fw-bold shadow">
+                    <img class="img-fluid rounded-4 my-3" src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg" alt="Imagem de comida brasileira">
+                    <p class="paraCards">Feijoada Completa</p>
+                </div>
+                <div class="cards col-3 rounded-4 mx-5 text-center align-items-center fw-bold shadow">
+                    <img class="img-fluid rounded-4 my-3" src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg" alt="Imagem de comida brasileira">
+                    <p class="paraCards">Moqueca Baiana</p>
+                </div>
+                <div class="cards col-3 rounded-4 mx-5 text-center align-items-center fw-bold shadow    ">
+                    <img class="img-fluid rounded-4 my-3" src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg" alt="Imagem de comida brasileira">
+                    <p class="paraCards">Escondidinho de Carne Seca</p>
+                </div>
+            </div>
+            <div style="background-color: #FBE9E7;" class="row rounded-4 py-4 px-2 justify-content-center">     
+                <h2 style=" padding-top: 10px; padding-bottom: 20px; ">O que dizem os clientes</h2>
+                <div class="col-6 rounded-4 mx-5 text-center align-items-center fw-bold">
+                    <p>"Comida deliciosa e atendimento impecável. Me senti em casa!" - João P.</p>
+                    <p>"A melhor moqueca que já comi na vida. Parabéns pelo capricho!" - Maria S.</p>
+                    <p>"Ambiente aconchegante e ótimos preços. Voltarei com certeza!" - Rafael T.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer style="background-color: #B71B1C; height: 100px;">
+        <div class="h-100 text-white p-3 text-center">
+            <p>2025 Restaurante Sabor Brasil | Todos os direitos reservados</p>
+            <p>Facebook | Instagram | WhatsApp</p>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</html>

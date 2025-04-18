@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.5-dist/css/bootstrap.min.css">
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .caixa{
+            width: 150px;
+            height: 150px;
+        }
+        .container{
+            height: 800px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-secondary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+
+
+
+    <h1>Classes do FlexBox no bootstrap</h1>
+    <!-- 
+    Flex Direction: 
+     flex-column, flex-column-reverse, flex-row, flex-row-reverse 
+     Quebra de linha:
+     flex-wrap, flex-nowrap, flex-wrap-reverse
+     Alinhamento Horizontal:
+     justify-content-end, justify-content-start, justify-content-around, justify-content-between, justify-content-evenly, justify-content-center
+     Alinhamento Vertical:
+    align-items-start, align-items-end, align-items-center, align-items-baseline
+
+    Alinhamento individual:
+    align-self-center
+    align-self-start
+    align-self-end
+    align-self-baseline
+    align-self-stratch
+     -->
+    <div class="container border border-5  border-danger d-flex flex-column flex-md-row flex-nowrap justify-content-center align-items-start">
+        <div class="caixa bg-secondary ">
+            caixa 1
+        </div>
+        <div class="caixa bg-danger ">
+            caixa 2
+        </div>
+        <div class="caixa bg-warning ">
+            caixa 3
+        </div>
+        <div class="caixa bg-info ">
+            caixa 4
+        </div>
+    </div>
+
+    <div class="container border border-5 border-danger ">
+        <div class="caixa bg-secondary w-100 text-md-center text-sm-start text-end">
+            caixa 1
+        </div>
+        <div class="caixa d-none d-md-block">
+            caixa 2
+        </div>
+        <div class="caixa bg-warning ">
+            caixa 3
+        </div>
+        <div class="caixa bg-info ">
+            caixa 4
+        </div>
+    </div>
+
+
+</body>
+
+<script src="./bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

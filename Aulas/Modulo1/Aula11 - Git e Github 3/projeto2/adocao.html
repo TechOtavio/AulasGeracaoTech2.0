@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoção de Pet</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #ffffff;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* Banner principal */
+.banner {
+  height: 400px;
+  background-color: #ddd;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+    main {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .checkbox-group,
+    .radio-group {
+      margin-top: 10px;
+    }
+
+    .checkbox-group label,
+    .radio-group label {
+      display: inline-block;
+      margin-right: 20px;
+      font-weight: normal;
+    }
+
+    .submit-btn {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #1a1a1a;
+      color: #f2f2f2;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .submit-btn:hover {
+      background-color: #000;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .social img {
+      width: 30px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div>
+          lLogo  
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Serviços </li>
+                <li>Produtos</li>
+                <li>Adoção</li>
+            </ul>
+        </nav>
+     </header> 
+
+    <main>
+      <h2>Formulário de Adoção de Pet</h2>
+      <form>
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="endereco">Endereço completo:</label>
+        <input type="text" id="endereco" name="endereco">
+
+        <label for="residencia">Tipo de residência:</label>
+        <select id="residencia" name="residencia">
+          <option value="">Selecione</option>
+          <option value="casa">Casa</option>
+          <option value="apartamento">Apartamento</option>
+          <option value="chacara">Chácara / Sítio</option>
+        </select>
+
+        <label>Você já possui outros pets?</label>
+        <div class="radio-group">
+          <label><input type="radio" name="outrosPets" value="sim"> Sim</label>
+          <label><input type="radio" name="outrosPets" value="nao"> Não</label>
+        </div>
+
+        <label for="preferencia">Preferência de animal para adoção:</label>
+        <select id="preferencia" name="preferencia">
+          <option value="">Selecione</option>
+          <option value="cachorro">Cachorro</option>
+          <option value="gato">Gato</option>
+          <option value="indiferente">Indiferente</option>
+        </select>
+
+        <label for="observacoes">Observações:</label>
+        <textarea id="observacoes" name="observacoes" placeholder="Fale mais sobre seu interesse em adotar, sua rotina, etc."></textarea>
+
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" name="termo" required>
+            Declaro que concordo com os termos de responsabilidade da adoção.
+          </label>
+        </div>
+
+        <button class="submit-btn" type="submit">Enviar Solicitação</button>
+      </form>
+    </main>
+
+    <footer>
+        <p>Endereço</p>
+        <div class="social">
+          <img src="icon1.png" alt="icon1" />
+          <img src="icon2.png" alt="icon2" />
+          <img src="icon3.png" alt="icon3" />
+        </div>
+    </footer>
+  </div>
+</body>
+</html>
