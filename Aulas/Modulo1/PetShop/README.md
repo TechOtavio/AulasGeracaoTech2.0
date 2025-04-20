@@ -1,14 +1,11 @@
-
 ```markdown
 # 🐾 Login PetShop - Projeto Node.js
 
 Este é um projeto simples de login feito com **HTML** e **Node.js (Express)**, criado para fins de aprendizado. O sistema simula uma autenticação básica de usuários e redirecionamento após o login.
 
----
 
 ## 📁 Estrutura do Projeto
 
-```
 PetShop/
 │
 ├── Login.html          # Página de login (frontend)
@@ -16,9 +13,7 @@ PetShop/
 ├── Server.js           # Servidor Node.js com Express
 ├── package.json        # Dependências e scripts do projeto
 └── node_modules/       # Módulos do Node.js (criados com npm install)
-```
 
----
 
 ## ⚙️ Pré-requisitos
 
@@ -27,7 +22,6 @@ Antes de começar, você precisa ter instalado:
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) (vem junto com o Node)
 
----
 
 ## 🚀 Como rodar o projeto
 
@@ -61,7 +55,6 @@ node Server.js
 http://localhost:3000
 ```
 
----
 
 ## 👥 Usuários para teste
 
@@ -72,7 +65,6 @@ Você pode usar os seguintes dados para fazer login:
 | otaviolevi@petshop.com     | 123456  |
 | gabrielalex@petshop.com    | 123456  |
 
----
 
 ## 🔄 Fluxo do Login
 
@@ -82,7 +74,6 @@ Você pode usar os seguintes dados para fazer login:
 4. Se o login for válido, mostra uma mensagem e redireciona para `Teste.html`
 5. Caso contrário, exibe erro
 
----
 
 ## 📦 Tecnologias usadas
 
@@ -92,20 +83,14 @@ Você pode usar os seguintes dados para fazer login:
 - Node.js
 - Express
 
----
 
 ## 🧠 Objetivo
 
 Este projeto tem como finalidade o **aprendizado de back-end básico com Express** e **manipulação de formulários HTML**.
 
----
 
 ## 📬 Contato
 
 Se tiver dúvidas ou sugestões, fique à vontade para abrir uma *issue* ou enviar uma mensagem!
 
 ```
-
----
-
-Se você quiser, posso inserir o link do seu repositório GitHub diretamente aí. É só me passar!
