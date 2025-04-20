@@ -22,6 +22,7 @@ Antes de começar, você precisa ter instalado:
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) (vem junto com o Node)
 
+```
 
 ## 🚀 Como rodar o projeto
 
@@ -92,5 +93,3 @@ Este projeto tem como finalidade o **aprendizado de back-end básico com Express
 ## 📬 Contato
 
 Se tiver dúvidas ou sugestões, fique à vontade para abrir uma *issue* ou enviar uma mensagem!
-
-```
