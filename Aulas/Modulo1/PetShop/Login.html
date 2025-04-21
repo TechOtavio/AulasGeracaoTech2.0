@@ -13,20 +13,22 @@
         <main>
             <h1 class="text-center py-5">Login - PetShop</h1>
             <div class="container my-5 rounded-4 shadow">   
-                <form action="/login" method="POST">    
+                <form class="p-5" action="/login" method="POST">    
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email..." required>
                     </div>
                     <div class="mb-3">
-                        <label for="senha" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="senha" name="senha" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Entrar</button>
+                        <label for="senha" class="form-label">Senha:</label>
+                        <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha..." required>
+                    </div> 
+                    <div style="width: 60px; margin-left: auto; margin-right: auto;">
+                        <button style="background-color: rgb(48, 48, 91); color: aliceblue;" class="rounded-2" type="submit">Entrar</button>
+                    </div>    
                 </form>
             </div>
         </main>
-        <footer>
+        <footer>    
 
         </footer>
     </body>
