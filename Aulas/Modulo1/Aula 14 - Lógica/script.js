@@ -1,0 +1,1 @@
+document.write(`Codigo gerado em js`);
