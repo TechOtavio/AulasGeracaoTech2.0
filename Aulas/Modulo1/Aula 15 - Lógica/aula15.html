@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 15 - Lógica</title>
+</head>
+<script>
+    // Variáveis -> let, const e var.
+    // Operadores:
+    // Aritméticos -> +, -, *, /, %
+    // Atribuição -> =, +=, -=, *=, /=, %=
+    // Comparação -> ==, ===, !=, !==, >, <, >=, <=
+
+    // // 1 - Receba dois nomes via prompt e mostre uma mensagem de bem-vindo.
+    // let nome1 = prompt("Digite o primeiro nome:");
+    // let nome2 = prompt("Digite o segundo nome:");
+    // alert(`Bemvindo(a) ${nome1} e ${nome2}!`);
+
+    // // 2 - Peça ao usuário um número e mostre o dobro desse número.
+    // let numero = Number(prompt("Digite um número: "));
+    // let dobro = numero * 2;
+    // alert(`O dobro de ${numero} é ${dobro}.`);
+
+    // // 3 - Peça ao usuáriio seu nome e idade, e mostre uma mensagem com o nome e a idade dele.
+    // let nome = prompt("Digite seu nome: ");
+    // let idade = Number(prompt("Digite sua idade: "));
+    // alert(`Olá ${nome}, você tem ${idade} anos.`);
+
+    // // 4 - Peça ao usuário dois números e mostre a soma deles.
+    // let num1 = Number(prompt("Digite o primeiro número: "));
+    // let num2 = Number(prompt("Digite o segundo número: "));
+    // let soma = num1 + num2;
+    // let subtracao = num1 - num2;
+    // let multiplicacao = num1 * num2;
+    // let divisao = num1 / num2;
+    // alert(`A soma de ${num1} e ${num2} é ${soma}.`);
+    // alert(`A subtração de ${num1} e ${num2} é ${subtracao}.`);
+    // alert(`A multiplicação de ${num1} e ${num2} é ${multiplicacao}.`);
+    // alert(`A divisão de ${num1} e ${num2} é ${divisao}.`);
+
+    // // 5 - Peça para o usuário digitar a largura e o comprimento de um terreno e mostre uma mensagem com a área do terreno.
+    // let largura = Number(prompt("Digite sua largura: "));
+    // let comprimento = Number(prompt("Digite seu comprimento: "));
+    // let area = largura * comprimento;
+    // alert(`A área do terreno é ${area} m2.`);
+
+    // // 6 - Peça para o usuário digitar uma quantidade de dias e mostre quantos minutos que representa essa quantidade de dias.
+    // let dias = Number(prompt("Digite a quantidade de dias: "));
+    // let minutos = dias * 24 * 60;
+    // alert(`A quantidade de minutos em ${dias} dias é ${minutos} `);
+    
+    // // 7 - Faça um programa que recebe os coeficientes a, b e c de uma equação do segundo grau e mostre as raízes da equação.
+    // let a = Number(prompt("Digite o coeficiente a: "));
+    // let b = Number(prompt("Digite o coeficiente b: "));
+    // let c = Number(prompt("Digite o coeficiente c: "));
+    // let delta = b*b-4*a*c;
+    // if (delta < 0) {
+    //     alert("A equação não possui raízes reais.");
+    // }
+    // else if (delta === 0) {
+    //     alert(`A raíz única  é ${-b/(2*a)}`)
+    // }
+    // else{
+    //     alert(`A primeira raiz é ${(-b+Math.sqrt(delta))/(2*a)}, a segunda é ${(-b-Math.sqrt(delta))/(2*a)}`)
+    // }
+
+    // 8 - Crie um programa que solicite a altura e o peso de uma pessoa e calcule o IMC.
+    let altura = parseFloat(prompt("Informe sua altura: "))
+    let peso = parseFloat(prompt("Informe seu peso: "))
+    if(altura && peso == Number){
+        alert(`Altura: ${altura} Peso: ${peso}`)
+        let IMC = peso/(altura*altura)
+            alert(`O seu IMC é ${IMC.toFixed(2)}`)
+        if (IMC >= 30){
+            alert(`Você está com Obesidade Grau 1!`)
+        }else if(IMC >= 25){
+            alert(`Você está com Sobrepeso!`)
+        }else if(IMC >= 18,5){
+            alert(`Você está com Peso Adequado!`)
+        }else if(IMC > 18,5){
+            alert(`Você está Abaixo do Peso`)
+        }else{
+            alert(`Tente novamente!`)
+        }
+    }else{
+        alert(`Dados inválidos!\nTente novamente!`)
+    }
+    
+    
+</script>
+<body>
+    
+</body>
+</html>
