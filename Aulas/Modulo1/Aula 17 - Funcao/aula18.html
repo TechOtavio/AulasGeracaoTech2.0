@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 18</title>
+</head>
+<body>
+    
+</body>
+<script src="funcoes.js"></script>
+<script>
+    let saldo = 0;
+    do{
+        let opcoes = Number(prompt("Escolha uma opção:\n1 - Depositar\n2 - Sacar\n3 - Ver saldo\n4 - Sair"));
+        if(opcoes == 1){
+            let depositado = Number(prompt("Digite o valor a ser depositado:"));
+            saldo = depositar_valor(depositado, saldo);
+        }else if(opcoes == 2){
+            let saque = Number(prompt("Digite o valor a ser sacado:"));
+            saldo = sacar_valor(saque, saldo);
+        }else if(opcoes == 3){
+            mostrar_saldo(saldo);
+        }else if(opcoes == 4){
+            alert("Saindo...");
+        }else{
+            alert("Opção inválida! Tente novamente.");
+        }
+    }while(opcoes != 4);
+</script>
+</html>
