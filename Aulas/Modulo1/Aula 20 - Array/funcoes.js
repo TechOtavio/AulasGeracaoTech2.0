@@ -45,9 +45,8 @@
 // Reduce -> reduz o array a um único valor, aplicando uma função a cada elemento do array
 
 // let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// let soma = numeros.reduce((valorAcumulador, valorAtual) => {
-//     return valorAcumulador + valorAtual;
-// }, 0)
+// let soma = numeros.reduce((valorAcumulador, valorAtual) => {return valorAcumulador + valorAtual;}, 0)
+// O reduce recebe 2 valores: Primeiro a função(Função ou ArrowFunção) e depois o valorInicial(0)
 
 
 // Obejto -> estrututra de dados que armazena dados em pares de chave e valor.
@@ -65,18 +64,18 @@
 // console.log(pessoa.dizerOlá());
 
 
-// let produto = {
-//     nome: prompt('Informe o nome do produto: '),
-//     descrição: prompt('Informe a descrição do produto: '),
-//     preco: prompt('Informe o preço do produto: '),
-// }
+// let produto = {}
+// produto.nome = prompt('Informe o nome do produto: ')
+// produto.descrição = prompt('Informe a descrição do produto: ')
+// produto.preco = prompt('Informe o preço do produto: ')
+
 // console.log(`Nome produto: ${produto.nome}\nDescriçãao: ${produto.descrição}\nPreço: R$${produto.preco}`);
 
-// let livro ={
+// let livro = {
 //     titulo: 'Senhor dos Anéis',
 //     autor: 'J.R.R. Tolkien',
 //     ano: 1954,
-//     numeroPaginas: 1216,
+//     numeroPaginas: 1216
 // }
 // console.log(`Título: ${livro.titulo}\nAutor: ${livro.autor}\nAno: ${livro.ano}\nNúmero de páginas: ${livro.numeroPaginas}`);
 // livro.editora = 'HarperCollins';
