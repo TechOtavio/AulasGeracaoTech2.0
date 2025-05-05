@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM e Eventos</title>
+</head>
+<body>
+    <div>
+        <label for="letra1">Letra: </label><br>
+        <input type="text" name="letra1" id="letra1"><br>
+        <label for="letra2">Letra: </label><br>
+        <input type="text" name="letra2" id="letra2"><br><br>
+        <button onclick="Trocar()">Trocar</button><br><br>
+    </div>
+    <div>
+        <img id="Carro" src="https://garagem360.com.br/wp-content/uploads/2023/06/Toyota-Corolla-Cross-XRV-Hybrid-2023.jpg" alt="Carro" width="200px"><br>
+        <label for="TrocarImagem">URL:</label><br>
+        <input type="text" name="TrocarImagem" id="TrocarImagem"><br><br>
+        <button onclick="TrocarImagem()">TrocarImagem</button>
+    </div>
+</body>
+<script>
+    function Trocar(){
+        let letra1 = document.getElementById('letra1')
+        let letra2 = document.getElementById('letra2')
+        let VarAuxiliar = letra1.value
+        letra1.value = letra2.value
+        letra2.value = VarAuxiliar
+    }
+    function TrocarImagem(){
+        let imagem = document.getElementById('Carro')
+        let URL = document.getElementById('TrocarImagem')
+        imagem.setAttribute('src', URL.value)
+        URL.value = 'Você já trocou a URL...'
+        URL.setAttribute('disabled', 'desabled')
+    }
+</script> 
+</html>

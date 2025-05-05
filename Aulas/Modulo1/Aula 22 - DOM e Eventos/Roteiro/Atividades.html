@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    <div style="justify-items: center;">
+        <h1>Atividade 01</h1>
+    </div>
+    <div id="cadastro">
+        <label for="Nome">Nome: </label><br>
+        <input type="text" name="Nome" id="Nome"><br>
+        <label for="Idade">Idade: </label><br>
+        <input type="text" name="Idade" id="Idade"><br>
+        <label for="Nota">Nota: </label><br>
+        <input type="text" name="Nota" id="Nota"><br><br>
+        <button onclick="cadastrar()">Cadastrar</button>
+        <button onclick="mostrarAlunos()">Exibir Alunos</button><br><br>
+    </div>
+    <div id="mostrarAlunos">
+
+    </div>
+</body>
+<script>
+    let alunos = []
+    function cadastrar(){
+        let nome = document.getElementById('Nome')
+        let idade = document.getElementById('Idade')
+        let nota = document.getElementById('Nota')
+        let aluno = {
+            nome: nome.value,
+            idade: idade.value,
+            nota: nota.value
+        }
+        alunos.push(aluno);
+        alert(`Cadastro realizado com sucesso!`)
+    }
+
+    function mostrarAlunos(){
+        let mostrarAlunos = document.getElementById('mostrarAlunos')
+        let nomeAlunos = ''
+        alunos.forEach((aluno)=>{
+            nomeAlunos += `Nome: ${aluno.nome} idade: ${aluno.idade} nota: ${aluno.nota}<br>`
+        })
+        mostrarAlunos.innerHTML = nomeAlunos
+    }
+</script>
+</html>
