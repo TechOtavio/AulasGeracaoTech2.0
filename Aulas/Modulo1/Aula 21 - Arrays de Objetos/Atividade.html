@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+    <div id="lugar">
+        <h1>Atividade:</h1>
+        <label for="nomeLugar">Nome: </label><br>
+        <input type="text" id="nomeLugar" name="nomeLugar" placeholder="Nome..."><br>
+        <label for="Imagem">Imagem: </label><br>
+        <input type="text" id="Imagem" name="Imagem" placeholder="URL..."><br>
+        <label for="precoViagem">Preço da viagem: </label><br>
+        <input type="text" id="precoViagem" name="precoViagem" placeholder="R$ "><br>
+    </div>
+    <button onclick="criarPagina()">Criar</button>
+</body>
+<script>
+    let nome = document.getElementById('nomelugar').value
+    let imagem = document.getElementById('imagem').value
+    let preco = document.getElementById('precoViagem').value
+</script>
+</html>

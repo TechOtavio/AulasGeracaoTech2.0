@@ -45,3 +45,14 @@
 // }
 // console.log(agenda)
 
+// let filmesFavoritos = []
+// let filme = {}
+// for(let i = 0; i < 3; i++){
+//     filme.titulo = prompt('Informe o título do filme: '),
+//     filme.anoLancamento = prompt('Informe o ano de lançamento: '),
+//     filme.direto = prompt('Informe o diretor: ')
+//     console.log(`Filme adicionado com sucesso!\nFilme de número ${i+1}:\nTítulo: ${filme.titulo}\nAno de Lançamento: ${filme.anoLancamento}\nDiretor: ${filme.direto}`)
+//     filmesFavoritos.push(filme.titulo)
+// }
+// console.log(filmesFavoritos)
+
