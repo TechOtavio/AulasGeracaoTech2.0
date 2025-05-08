@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    <div>
+        Digite Algo: <br><input id="Frase" type="text" oninput="revisarTexto()"><br><br>
+        Números: <br><input id="numeros" type="text" disabled><br>
+        Letras: <br><input id="letras" type="text" disabled><br>
+    </div>
+</body>
+<script>
+    function revisarTexto(){
+
+        let numeros = ''
+        let letras = ''
+        let caracteres = document.getElementById('Frase').value
+        for (let i = 0; i < caracteres.length; i++){
+            let letra = caracteres[i]            
+            if(Number(letra) && letra !== ' '){
+                numeros += letra
+            }else if(String(letra) && letra !== ' '){
+                letras += letra
+            }
+        }
+
+        document.getElementById('numeros').value = numeros
+        document.getElementById('letras').value = letras
+    }
+
+</script>
+</html>
