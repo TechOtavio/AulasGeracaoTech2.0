@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School - Online</title>
+    <style>
+        body{
+            border: 0;
+            padding: 0;
+            font-family: monospace;
+        }
+        .cadastrarAluno{
+            width: 50%;
+            background-color: aquamarine;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin: 50px;">Escola Estadual Dionisio Torres</h1>
+    <h2 style="text-align: center;">Cadastrar Alunos</h2>
+
+    <section class="cadastrarAluno">
+        <label for="matricula"><strong>Matricula: </strong></label><br>
+        <input type="text" name="matricula" id="matricula1"><br><br>
+        <label for="nome"><strong>Nome: </strong></label><br>
+        <input type="text" name="nome" id="nome"><br><br>
+        <label for="idade"><strong>Idade: </strong></label><br>
+        <input type="text" name="idade" id="idade"><br><br>
+        <label for="NotadePortuguês"><strong>Nota de Português: </strong></label><br>
+        <input type="text" name="NotadePortuguês" id="NotadePortuguês"><br><br>
+        <label for="NotadeMatematica"><strong>Nota de Matematica: </strong></label><br>
+        <input type="text" name="NotadeMatematica" id="NotadeMatematica"><br><br>
+        <button type="submit" id="cadastrarAluno">Cadastrar</button>
+    </section>
+
+    <h2 style="text-align: center;">Buscar Alunos</h2>
+    <section class="cadastrarAluno">
+        <label for="matricula"><strong>Matricula: </strong></label><br>
+        <input type="text" name="matricula" id="matricula2"><br><br>
+        <div id="respostaBuscar"></div>
+        <button type="submit" id="buscarAluno">Buscar</button>
+    </section>
+
+    <h2 style="text-align: center;">Deletar Dados de Alunos</h2>
+    <section class="cadastrarAluno">
+        <label for="matricula"><strong>Matricula: </strong></label><br>
+        <input type="text" name="matricula" id="matricula3"><br><br>
+        <button type="submit" id="deletarAluno">Deletar</button>
+    </section>
+
+</body>
+<script>
+    let botaoCadastrar = document.getElementById('cadastrarAluno')
+    botaoCadastrar.addEventListener('click', ()=> {
+        let matricula = document.getElementById('matricula1').value
+        let nome = document.getElementById('nome')
+        let idade = document.getElementById('idade')
+        let NotadePortuguês = document.getElementById('NotadePortuguês')
+        let NotadeMatematica = document.getElementById('NotadeMatematica')
+        let Aluno = {
+            nome: nome.value,
+            idade: idade.value,
+            NotadePortuguês: NotadePortuguês.value,
+            NotadeMatematica: NotadeMatematica.value
+        }
+        alert(`Aluno ${Aluno.nome} foi cadastado com sucesso!`)
+        Aluno = JSON.stringify(Aluno)
+        localStorage.setItem(matricula, Aluno)
+    })
+
+    let botaoBuscar = document.getElementById('buscarAluno')
+    botaoBuscar.addEventListener('click', ()=>{
+        let matricula = document.getElementById('matricula2').value
+        let div = document.getElementById('respostaBuscar')
+        let alunoCadastrado = localStorage.getItem(matricula)
+        alunoCadastrado = JSON.parse(alunoCadastrado)
+        div.innerHTML = `<h3>Aluno buscado:</h3>
+        <p><strong>Nome: </strong>${alunoCadastrado.nome}</p>
+        <p><strong>idade: </strong>${alunoCadastrado.idade}</p>
+        <p><strong>Média: </strong>${(alunoCadastrado.NotadePortuguês+alunoCadastrado.NotadeMatematica)/2}</p>
+        `
+    })
+
+    let botaoDeletar = document.getElementById('deletarAluno')
+    botaoDeletar.addEventListener('click', ()=>{
+        
+    })
+</script>
+</html>
