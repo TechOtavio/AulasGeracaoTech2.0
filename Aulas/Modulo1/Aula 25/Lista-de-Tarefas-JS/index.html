@@ -11,10 +11,59 @@
     <h1>Lista de Tarefas</h1>
     <form id="formularioTarefa">
       <input type="text" id="inputTarefa" placeholder="Digite uma tarefa" required>
-      <button type="submit">Adicionar Tarefa</button>
+      <button type="button" onclick="adicionarTarefa()">Adicionar Tarefa</button>
     </form>
-    <ul id="listaTarefas"></ul>
+    <div id="DivTarefa"></div>
   </div>
-
 </body>
+<script>
+  function adicionarTarefa() {
+    const DivTarefa = document.getElementById('DivTarefa');
+    const informação = document.getElementById('inputTarefa');
+
+    if (informação.value.trim() === "") return; // Evita tarefas vazias
+
+    let DivFilho = document.createElement('div');
+    DivFilho.setAttribute('style', 'width: 835px; margin: 10px auto; background-color: aliceblue; border: 1px solid black; display: flex; justify-content: space-between; align-items: center; padding: 10px;');
+    DivTarefa.appendChild(DivFilho);
+
+    let Titulo = document.createElement('p');
+    Titulo.innerText = informação.value;
+    Titulo.setAttribute('style', 'margin: 0;');
+
+    let DivNeto = document.createElement('div');
+
+    let Bnt1 = document.createElement('button');
+    Bnt1.innerText = 'Editar';
+    Bnt1.setAttribute('style', 'background-color: red; color: white; margin: 5px;');
+    Bnt1.setAttribute('type', 'button');
+    Bnt1.setAttribute('onclick', 'Editar(this)');
+
+    let Bnt2 = document.createElement('button');
+    Bnt2.innerText = 'Excluir';
+    Bnt2.setAttribute('style', 'background-color: red; color: white; margin: 5px;');
+    Bnt2.setAttribute('type', 'button');
+    Bnt2.setAttribute('onclick', 'Excluir(this)');
+
+    DivFilho.appendChild(Titulo);
+    DivNeto.appendChild(Bnt1);
+    DivNeto.appendChild(Bnt2);
+    DivFilho.appendChild(DivNeto);
+
+    informação.value = ""; // limpa o campo
+  }
+
+  function Editar(botao) {
+    const paragrafo = botao.parentElement.parentElement.querySelector('p');
+    const novoTexto = prompt('Editar tarefa:', paragrafo.innerText);
+    if (novoTexto !== null && novoTexto.trim() !== '') {
+      paragrafo.innerText = novoTexto;
+    }
+  }
+
+  function Excluir(botao) {
+    const divParaRemover = botao.parentElement.parentElement;
+    divParaRemover.remove();
+  }
+</script>
 </html>
