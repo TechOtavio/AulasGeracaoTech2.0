@@ -1,0 +1,24 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  margin-bottom: 500px;
+}
+h1{
+  color: red;
+}
+p{
+  color: green;
+  background-color:black;
+  padding: 15px;
+}
+.paraDois{
+  color: blue;
+}
+

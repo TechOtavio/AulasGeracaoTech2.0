@@ -1,0 +1,27 @@
+.all{
+    width: 30%;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 50px;
+}
+.divTitulo{
+    width: 30%;
+    margin: 0 auto;
+}
+.img{
+    width: 250px;
+    height: 185px;
+    border-radius: 50%;
+}
+.divPortifolio{
+    width: 30%;
+    margin: 10px auto;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+}
