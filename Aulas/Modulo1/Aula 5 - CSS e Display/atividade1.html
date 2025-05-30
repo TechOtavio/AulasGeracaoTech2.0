@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout com Flexbox</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      min-height: 400px;
+    }
+
+    aside {
+      background-color: #f4f4f4;
+      width: 20%;
+      padding: 20px;
+    }
+
+    main {
+      background-color: #ddd;
+      width: 80%;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #666;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      aside, main {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Meu Layout com Flexbox</h1>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h2>Menu</h2>
+      <ul>
+        <li>Início</li>
+        <li>Sobre</li>
+        <li>Contato</li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>Conteúdo Principal</h2>
+      <p>Este é o conteúdo principal do site. Ele ocupa 80% da largura em telas grandes.</p>
+    </main>
+  </div>
+
+  <footer>
+    <p>Rodapé - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>

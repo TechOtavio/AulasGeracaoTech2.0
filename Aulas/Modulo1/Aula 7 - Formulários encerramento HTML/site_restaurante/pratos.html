@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pratos - Sabor Brasil</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8e1;
+      margin: 0;
+    }
+
+    header {
+      background-color: #b71c1c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ffccbc;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    h2 {
+      text-align: center;
+      color: #e65100;
+      margin: 30px 0 10px;
+    }
+
+    .card {
+      display: flex;
+      background: white;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 900px;
+      box-shadow: 0 0 8px #ccc;
+      overflow: hidden;
+      flex-wrap: wrap;
+    }
+
+    .card img {
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .info {
+      padding: 20px;
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .info h3 {
+      margin-top: 0;
+      color: #bf360c;
+    }
+
+    .preco {
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .info button {
+      background-color: #e65100;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .info button:hover {
+      background-color: #bf360c;
+    }
+
+    footer {
+      background-color: #b71c1c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Restaurante Sabor Brasil</h1>
+    <p>O verdadeiro sabor da nossa terra</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="pratos.html">Pratos</a>
+    <a href="bebidas.html">Bebidas</a>
+    <a href="cadastro.html">Cadastro</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+  <h2>Pratos Típicos</h2>
+
+  <div class="card">
+    <img src="https://www.penaestrada.blog.br/wp-content/uploads/2021/02/comidas-tipicas-do-brasil-cozinha.jpg.webp" alt="Feijoada">
+    <div class="info">
+      <h3>Feijoada Completa</h3>
+      <p>Feijão preto com carnes variadas, arroz, farofa e couve refogada.</p>
+      <div class="preco">R$ 35,00</div>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://cdn.prod.website-files.com/5edf7b44b7a4f6000913a233/6682fd403a49468321d77412_top-10-comidas-mais-consumidas-no-brasil_.webp" alt="Moqueca">
+    <div class="info">
+      <h3>Moqueca Baiana</h3>
+      <p>Peixe cozido com leite de coco, azeite de dendê e pimentões.</p>
+      <div class="preco">R$ 42,00</div>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://cdn.pixabay.com/photo/2020/09/06/10/15/feijoada-5548854_1280.jpg" alt="Escondidinho">
+    <div class="info">
+      <h3>Escondidinho de Carne Seca</h3>
+      <p>Purê de mandioca com carne seca desfiada e queijo gratinado.</p>
+      <div class="preco">R$ 30,00</div>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://cdn.pixabay.com/photo/2016/08/04/18/08/food-1564296_1280.jpg" alt="Acarajé">
+    <div class="info">
+      <h3>Acarajé com Vatapá</h3>
+      <p>Bolinhos de feijão fradinho fritos no dendê com recheio de vatapá e camarão.</p>
+      <div class="preco">R$ 25,00</div>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Restaurante Sabor Brasil | Todos os direitos reservados</p>
+    <p>
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">WhatsApp</a>
+    </p>
+  </footer>
+
+</body>
+</html>
